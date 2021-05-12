@@ -20,6 +20,7 @@
    margin:0;
    padding:0;
    box-sizing: border-box; 
+   list-style: none;
 }
 
 body{
@@ -86,9 +87,6 @@ img{
     padding:20px;
 }
 
-ul{
-    list-style-type: none;
-}
 
 ul li{
     display: flex;
@@ -129,6 +127,9 @@ h3{
     font-size:2rem;
     text-align: center;
     padding-bottom:2px;
+    text-decoration:underline;
+    text-decoration-color: whitesmoke;
+    line-height: 30px;
 }
 
 .info-item{
@@ -143,4 +144,49 @@ h3{
 
 .info-item .part p{
    font-size:1rem;
+}
+
+.skills{
+    width:360px;
+    color:white;
+    font-family: sans-serif;
+} 
+.skills li{
+    margin:20px 0;
+}
+
+.bar{
+    background:white;;
+    display: block;
+    height: 10px;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    width:50%;
+    margin:5px 10px 0 10px;
+}
+
+.bar span{
+    height: 10px;
+    float:left;
+    background:#2187e7;
+}
+
+.html{
+    width:95%;
+   
+}
+
+.css{
+    width:75%;
+    
+}
+
+.javascript{
+    width:65%;
+}
+
+.php{
+    width:20%;
 }
