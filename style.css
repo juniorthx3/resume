@@ -75,6 +75,17 @@ h3{
     padding:20px;
 }
 
+.info-item .data a{
+    text-decoration: none;
+    color:inherit;
+}
+.info-item .data :hover{
+    color:red;
+    font-weight: bold;
+}
+
+
+
 ul li{
     display: flex;
     font-size:20px;
