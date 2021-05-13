@@ -155,11 +155,11 @@ ul li{
 }
 
 .css{
-    width:75%;  
+    width:65%;  
 }
 
 .javascript{
-    width:65%;
+    width:55%;
 }
 
 .php{
@@ -167,15 +167,15 @@ ul li{
 }
 
 .bootstrap{
-    width:80%;
+    width:40%;
 }
 
 .react{
-    width:85%;
+    width:50%;
 }
 
 .redux{
-    width:40%;
+    width:30%;
 }
 
 .sql{
@@ -183,7 +183,7 @@ ul li{
 }
 
 .mongodb{
-    width:70%;
+    width:40%;
 }
 
 .right{
@@ -259,7 +259,7 @@ ul li{
 }
 
 .right .experience ul li .date, .right .coursetraining ul li .date, .right .education ul li .date{
-    font-size:16px;  
+    font-size:18px;  
     font-weight: 800;
     padding-bottom: 60px;
     text-shadow: -1px 2px 4px rgb(219 21 21 / 42%);
@@ -270,7 +270,7 @@ ul li{
     position:absolute;
     top:30px;
     left:20px;
-    font-size:1rem;
+    font-size:1.1rem;
     background:none;
     padding-top:5px;
 }
@@ -297,23 +297,13 @@ ul li{
     background:#0bb5f4; 
  }
 
- .right .hobby ul{
-     display: flex;
-     justify-content: space-between;
+
+ .footer{
+     padding-top:100px;
+     height:171px;
+     background:rgba(219, 21, 21, 0.418)
  }
 
- .right .hobby ul li{
-     width:80px;
-     height: 80px;
-     border:2px solid #0bb5f4;
-     position: relative;
-     color: #0bb5f4;
-      
- }
-
- .right .hobby ul li i{
-     font-size: 30px;
- }
 
 
 
