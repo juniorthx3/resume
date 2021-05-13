@@ -269,7 +269,7 @@ ul li{
 .right .experience ul li .info, .right .coursetraining ul li .info, .right .education ul li .info{
     position:absolute;
     top:30px;
-    left:50px;
+    left:20px;
     font-size:1rem;
     background:none;
     padding-top:5px;
