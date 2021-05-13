@@ -8,7 +8,6 @@
     src:url('./assets/fonts/Lobster/Lobster-Regular.ttf')
 }
 
-
 :root{
     --color1:rgb(145, 133, 133);
     --color2:blue;
@@ -27,27 +26,26 @@ body{
  font-family: 'Calibri Light';
   background-color:var(--color1);
   height: 100vh;
-  font-size:14px;
+  font-size:10px;
   line-height: 22px;
 }
 
 .container{
-    width:800px;
+    width:950px;
+    height: auto;
     margin:30px auto;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-area: a a;
+    grid-template-columns: 30% 70%;
     position: relative;
 }
-
+ 
 .left{
-    width:400px;
+    width:285px;
     position: relative;
 }
-
 .info{
   position: absolute;
-  top:352px;
+  top:258px;
 }
 
 img{
@@ -55,23 +53,12 @@ img{
     height: 100%;
 }
 
-.title{
-    text-align: center;
-    padding:20px;
-    margin-bottom: 0;
-}
-
-.title h1{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size:3rem;
+h3{
     font-family: 'Teko';
-}
-
-.title h2{
-    font-size:20px;
-    font-weight: 400;
-    font-family: 'Lobster';
+    font-size:2rem;
+    text-align: center;
+    text-decoration-color: whitesmoke;
+    line-height: 30px;
 }
 
 .info{
@@ -88,7 +75,6 @@ img{
     padding:20px;
 }
 
-
 ul li{
     display: flex;
     font-size:20px;
@@ -102,7 +88,7 @@ ul li{
     color: var(--color4);
     margin-top:5px;
     color:#000;
-    font-size:20px;
+    font-size:18px;
 }
 
 .icon{
@@ -121,16 +107,6 @@ ul li{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-h3{
-    font-family: 'Teko';
-    font-size:2rem;
-    text-align: center;
-    padding-bottom:2px;
-
-    text-decoration-color: whitesmoke;
-    line-height: 30px;
 }
 
 .info-item{
@@ -160,11 +136,11 @@ h3{
 .bar{
     background:white;;
     display: block;
-    height: 12px;
+    height: 10px;
     border:1px solid rgba(0,0,0,0.3);
     overflow: hidden;
     box-shadow: 0 0 10px #2187e7b3;
-    width:95%;
+    width:65%;
     margin:6px 0 10px 0;
 }
 
@@ -175,7 +151,7 @@ h3{
 }
 
 .html{
-    width:100%;
+    width:100%; 
 }
 
 .css{
@@ -211,7 +187,133 @@ h3{
 }
 
 .right{
-    width:400px;
+    width:665px;
     background:white;
     position: relative;
+    height: auto;
+    padding:20px;
 }
+
+.right .title{
+    text-align: center;
+    padding:40px 20px 15px 20px;
+    background:rgba(219, 21, 21, 0.418);
+    color:white;
+}
+
+.right .title h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:5rem;
+    font-family: 'Teko';
+    padding-bottom:20px;
+}
+
+.right .title h2{
+    font-size:2rem;
+    font-weight: 400;
+    font-family:'Lobster';
+}
+
+.right .title hr{
+    margin:10px;
+}
+
+.right .title .about{
+    font-size:1rem;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.right .title hr{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.headjob{
+    color:#2187e7;
+    border-bottom: 3px solid red;
+    padding:20px 0 4px 0;
+}
+
+.head{
+    font-size:1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: -1px 2px 4px rgb(219 21 21 / 42%);
+}
+
+.right .experience ul,
+.right .coursetraining ul,
+.right .education ul{
+   padding-left:20px;
+}
+
+.right .experience ul li, .right .coursetraining ul li,.right .education ul li{
+    padding-top:10px;
+    position: relative;
+}
+
+.right .experience ul li .date, .right .coursetraining ul li .date, .right .education ul li .date{
+    font-size:16px;  
+    font-weight: 800;
+    padding-bottom: 60px;
+    text-shadow: -1px 2px 4px rgb(219 21 21 / 42%);
+    word-spacing: 5px;
+}
+
+.right .experience ul li .info, .right .coursetraining ul li .info, .right .education ul li .info{
+    position:absolute;
+    top:30px;
+    left:50px;
+    font-size:1rem;
+    background:none;
+    padding-top:5px;
+}
+
+.right .experience ul li:before, .right .coursetraining ul li:before, .right .education ul li:before{
+   content:'';
+   position: absolute;
+   top:15px;
+   left:-8px;
+   width:6px;
+   height: 6px;
+   border-radius: 50%;
+   border:2px solid #0bb5f4; 
+   background:#0bb5f4; 
+}
+
+.right .experience ul li:after, .right .coursetraining ul li:after, .right .education ul li:after{
+    content:'';
+    position: absolute;
+    top:15px;
+    left:-4px;
+    width:2px;
+    height: 100px; 
+    background:#0bb5f4; 
+ }
+
+ .right .hobby ul{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .right .hobby ul li{
+     width:80px;
+     height: 80px;
+     border:2px solid #0bb5f4;
+     position: relative;
+     color: #0bb5f4;
+      
+ }
+
+ .right .hobby ul li i{
+     font-size: 30px;
+ }
+
+
+
